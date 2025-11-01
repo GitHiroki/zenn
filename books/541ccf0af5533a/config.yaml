@@ -8,6 +8,7 @@ summary: |
   ハンズオン部分の公開は、随時公開していく予定です。
 topics: [docker, dockerdesktop, コンテナ, 仮想化, 入門]
 published: true
+allow_override: true
 price: 200 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
 chapters:
