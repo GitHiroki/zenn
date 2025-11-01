@@ -29,6 +29,14 @@ https://github.com/docker
 普及し始めは、制限がありませんでしたが現在は制限が設けられました。
 個人ではもちろんOKです。
 
+詳しくは、以下に載っているので参考にしてください。
+https://www.docker.com/legal/docker-subscription-service-agreement/
+
+:::message
+個人で使う場合やDocker Desktopを必要とせずDocker Engineのみの場合には、無償です。
+:::
+
+
 ## 2-3. Windows環境でのDocker
 
 冒頭の説明でDockerは、Linuxのコンテナ技術を使用していると書きました。
@@ -64,16 +72,3 @@ Dockerを使った環境構築では、そのようなトラブルシューテ�
 サーバレスのサービスが普及してきたことでCI/CDの中に取り入れられていることが増えています。
 本番環境も個々のコンテナの状況は、ほぼ同じなので余計なことを考えなくて済みます。
 また、サーバの管理もなくなるのでフィードバックを受けて素早く提供するようなWebサービスなどと相性が良いです。
-
-## 2-6. Docker Desktop のライセンスについて
-
-無償版と有償版があります。
-企業の規模や売上に応じて有償版を検討してください。
-詳しくは、以下に載っているので参考にしてください。
-
-https://www.docker.com/legal/docker-subscription-service-agreement/
-
-:::message
-個人で使う場合やDocker Desktopを必要とせずDocker Engineのみの場合には、無償です。
-:::
-
