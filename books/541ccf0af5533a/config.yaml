@@ -1,0 +1,15 @@
+title: "10分でなんとなくわかる！ - Docker -"
+summary: | 
+  Dcokerを素早く理解するための本です。
+  前半は、Dockerとはなにかという話。
+  後半は、ハンズオン形式でDockerを理解する構成になっています。
+  一通り読んだ後には、Dockerでの環境構築が自分でできるようになっているはずです。
+  現在書き途中です。
+  ハンズオン部分の公開は、随時公開していく予定です。
+topics: [docker, dockerdesktop, コンテナ, 仮想化, 入門]
+published: true
+price: 200 # 有料の場合200〜5000
+# 本に含めるチャプターを順番に並べましょう
+chapters:
+  - 1-epilogue
+  - 2-what-is-docker
