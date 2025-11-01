@@ -9,8 +9,14 @@ summary: |
 topics: [docker, dockerdesktop, コンテナ, 仮想化, 入門]
 published: true
 allow_override: true
-price: 200 # 有料の場合200〜5000
+price: 500 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
 chapters:
   - 1-epilogue
   - 2-what-is-docker
+  - 3-hands-on-setup
+  - 4-hands-on-basic-commands
+  - 5-hands-on-dockerfile
+  - 6-hands-on-docker-compose
+  - 7-hands-on-best-practices
+  - 8-appendix
