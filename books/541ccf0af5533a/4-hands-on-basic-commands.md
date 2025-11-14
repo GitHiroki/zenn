@@ -3,7 +3,7 @@ title: "ハンズオン-コマンド編①"
 free: false
 ---
 
-## ハンズオン ー コマンド編①
+
 
 ここからハンズオンになります。
 
@@ -13,7 +13,7 @@ Dockerは、今やDocker DesktopをインストールしていればGUIで操作
 しかし、Dockerの本質を理解するためには、コマンドラインでの操作を覚えることが重要です。
 ここでは、Dockerを操作する上でよく使うコマンドをいくつか紹介します。
 
-### Dockerのバージョンを確認する
+## 4-1. Dockerのバージョンを確認する
 
 ```bash
 docker --version
@@ -22,7 +22,7 @@ docker --version
 このコマンドは、インストールされているDockerのバージョンを表示します。
 正直そんなに使いません。
 
-### Dockerのヘルプを表示する
+## 4-2. Dockerのヘルプを表示する
 
 ```bash
 docker help
@@ -37,7 +37,7 @@ Dockerのコマンドは非常に多いので、困ったときに使うと便�
 docker run --help
 ```
 
-### Dockerの情報を表示する
+## 4-3. Dockerの情報を表示する
 
 ```bash
 docker info
@@ -47,7 +47,7 @@ docker info
 インストールされているコンテナ数、イメージ数、ストレージドライバの種類など、詳細な情報が得られます。
 これは、あまり使いません。。
 
-### コンテナ一覧を表示する
+## 4-4. コンテナ一覧を表示する
 
 ```bash
 docker ps
@@ -66,7 +66,7 @@ docker ps -a
 コンテナがが停止した後に、なぜ停止しなのか確認するために使用します。
 また、余計なコンテナが残っていないか確認するために使用します。
 
-### イメージ一覧を表示する
+## 4-5. イメージ一覧を表示する
 
 ```bash
 docker images
@@ -75,7 +75,7 @@ docker images
 このコマンドは、ローカルに保存されているDockerイメージの一覧を表示します。
 `docker run`や`docker pull`で取得したイメージを確認するものです。
 
-### イメージを取得する
+## 4-6. イメージを取得する
 
 ```bash
 docker pull IMAGE[:TAG]
@@ -90,7 +90,7 @@ Dockerのイメージを取得するコマンドです。
 docker pull nginx
 ```
 
-### コンテナを起動する
+## 4-7. コンテナを起動する
 
 ```bash
 docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
@@ -110,7 +110,7 @@ docker run -d nginx
 このコマンドは、`nginx`イメージを使用して新しいコンテナをバックグラウンドで起動します。
 コンテナを起動する場合大抵は、バッググラウンドで起動します。
 
-### コンテナを起動する
+## 4-8. コンテナを起動する
 
 ```bash
 docker start CONTAINER
@@ -125,7 +125,7 @@ docker start CONTAINER
 docker start container1
 ```
 
-### コンテナを停止する
+## 4-9. コンテナを停止する
 
 ```bash
 docker stop CONTAINER
@@ -139,7 +139,7 @@ docker stop CONTAINER
 docker stop container1
 ```
 
-### コンテナを削除する
+## 4-10. コンテナを削除する
 
 ```bash
 docker rm CONTAINER
@@ -155,7 +155,7 @@ docker rm container1
 
 コンテナを削除するだけなので、Pullしてきたイメージは残ります。
 
-### イメージを削除する
+## 4-11. イメージを削除する
 
 ```bash
 docker rmi IMAGE
@@ -179,7 +179,7 @@ docker rmi 1234d090b25 1234d090b26 1234d090b27
 不要なイメージを消す時によく使います。
 複数消せることを覚えておくと便利です。
 
-### コンテナのログを表示する
+## 4-12. コンテナのログを表示する
 
 ```bash
 docker logs CONTAINER
@@ -207,7 +207,7 @@ docker logs -f -t -n 100 container1
 私自身がトラブルシュートする際によく使うオプションです。
 `-f`と`-n 100`は、tailfのように使えて便利です。
 
-### コンテナに接続する
+## 4-13. コンテナに接続する
 
 ```bash
 docker exec -it CONTAINER COMMAND
