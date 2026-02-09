@@ -55,22 +55,18 @@ body部を好きなように変えてみるのもただコピペするより面�
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background-color: white;
         }
         .container {
             text-align: center;
             padding: 2rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
+            border: 2px solid black;
         }
         h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            margin: 0 0 1rem 0;
         }
         p {
-            font-size: 1.2rem;
+            margin: 0;
         }
     </style>
 </head>
